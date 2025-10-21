@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fffbea;
+  color: #333;
+  line-height: 1.6;
+}
+
+header.hero {
+  position: relative;
+  background: linear-gradient(135deg, #facc15, #f97316);
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+.hero-content h1 {
+  font-size: 3.2rem;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  color: #fffb;
+}
+.hero-content p {
+  font-size: 1.2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: linear-gradient(90deg, #facc15, #f97316);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  background: rgba(255,255,255,0.2);
+  border-radius: 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #d97706;
+  margin-bottom: 15px;
+}
+
+.grid {
+  display: grid;
+  gap: 25px;
+}
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(216, 97, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+img:hover {
+  transform: scale(1.03);
+}
+
+.gallery {
+  text-align: center;
+}
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(45deg, #facc15, #f97316);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+footer {
+  text-align: center;
+  background: linear-gradient(90deg, #f59e0b, #b45309);
+  color: white;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
